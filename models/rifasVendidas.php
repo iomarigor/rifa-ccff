@@ -12,9 +12,7 @@ class RifasVendidas
         $query->bindParam(":IDRifa", $IDRifa, PDO::PARAM_STR);
         $query->execute();
         $query = $query->fetchAll(PDO::FETCH_CLASS);
-
         $this->DB->disConnect();
-
         if (count($query) == 0) {
             return false;
         }
@@ -25,7 +23,6 @@ class RifasVendidas
         $query = $this->DB->connect()->prepare("SELECT IDRifa, Nombres, Codigo FROM rifasvendidas");
         $query->execute();
         $query = $query->fetchAll(PDO::FETCH_CLASS);
-
         $this->DB->disConnect();
         return $query;
     }
@@ -63,7 +60,6 @@ class RifasVendidas
         $query = $this->DB->connect()->prepare("DELETE FROM rifasvendidas WHERE IDRifa= :IDRifa");
         $query->bindParam(":IDRifa", $IDRifa, PDO::PARAM_INT);
         $query->execute();
-
         return "{'status':true,'mensage':'Ticket eliminado ID: " . $params['IDRifa'] . "'}";
     }
 }
