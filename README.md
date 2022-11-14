@@ -2,8 +2,8 @@
 CRUD MVC Sorteo rifas fiis
 
 Vistas:
-(index) ./
-(List Tickets) ./search
+<p>(index) ./</p>
+<p>(List Tickets) ./search</p>
 
 Endpoints:
 <p>(Save ticket) ./search/save?Nombre=:Nombre&Codigo=:Codigo</p>
