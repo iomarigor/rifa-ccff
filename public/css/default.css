@@ -1,0 +1,35 @@
+/* .toast {
+    box-shadow: 0 0.5rem 1rem rgb(209 111 111 / 50%) !important;
+} */
+
+#liveToast.show {
+    z-index: 999999 !important;
+}
+
+#liveToast.hide {
+    z-index: -10 !important;
+}
+
+.modal-header .closee {
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+button.closee {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.closee {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
